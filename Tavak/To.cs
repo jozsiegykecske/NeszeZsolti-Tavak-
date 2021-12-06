@@ -22,9 +22,9 @@ namespace Tavak
       get { return terulet; }
       set { terulet = value; }
     }
-    private string orszag;
+    private List<string> orszag = new List<string>();
 
-    public string Orszag
+    public List<string> Orszag
     {
       get { return orszag; }
       set { orszag = value; }
@@ -57,8 +57,11 @@ namespace Tavak
       {
         this.terulet = Convert.ToInt32(felulet);
       }
-      
-      this.orszag = orszag;
+      string[] atmeneti = orszag.Split(',');
+      for (int i = 0; i < atmeneti.Length; i++)
+      {
+        this.orszag.Add(atmeneti[i]);
+      }
     }
   }
 }

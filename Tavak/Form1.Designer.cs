@@ -38,6 +38,8 @@
       this.button1 = new System.Windows.Forms.Button();
       this.listBoxOsszes = new System.Windows.Forms.ListBox();
       this.lblSivatag = new System.Windows.Forms.Label();
+      this.lblLegnagyobbNemSivatag = new System.Windows.Forms.Label();
+      this.lblOrszagSzamolas = new System.Windows.Forms.Label();
       this.SuspendLayout();
       // 
       // label1
@@ -123,11 +125,31 @@
       this.lblSivatag.TabIndex = 4;
       this.lblSivatag.Text = "label4";
       // 
+      // lblLegnagyobbNemSivatag
+      // 
+      this.lblLegnagyobbNemSivatag.AutoSize = true;
+      this.lblLegnagyobbNemSivatag.Location = new System.Drawing.Point(91, 319);
+      this.lblLegnagyobbNemSivatag.Name = "lblLegnagyobbNemSivatag";
+      this.lblLegnagyobbNemSivatag.Size = new System.Drawing.Size(35, 13);
+      this.lblLegnagyobbNemSivatag.TabIndex = 4;
+      this.lblLegnagyobbNemSivatag.Text = "label4";
+      // 
+      // lblOrszagSzamolas
+      // 
+      this.lblOrszagSzamolas.AutoSize = true;
+      this.lblOrszagSzamolas.Location = new System.Drawing.Point(91, 349);
+      this.lblOrszagSzamolas.Name = "lblOrszagSzamolas";
+      this.lblOrszagSzamolas.Size = new System.Drawing.Size(95, 13);
+      this.lblOrszagSzamolas.TabIndex = 4;
+      this.lblOrszagSzamolas.Text = "lblOrszagSzamolas";
+      // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(1128, 450);
+      this.Controls.Add(this.lblOrszagSzamolas);
+      this.Controls.Add(this.lblLegnagyobbNemSivatag);
       this.Controls.Add(this.lblSivatag);
       this.Controls.Add(this.listBoxOsszes);
       this.Controls.Add(this.button1);
@@ -158,6 +180,8 @@
     private System.Windows.Forms.Button button1;
     private System.Windows.Forms.ListBox listBoxOsszes;
     private System.Windows.Forms.Label lblSivatag;
+    private System.Windows.Forms.Label lblLegnagyobbNemSivatag;
+    private System.Windows.Forms.Label lblOrszagSzamolas;
   }
 }
 
